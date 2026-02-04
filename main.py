@@ -58,7 +58,7 @@ def main():
     print(f"Fetching data from: {target_url}...")
     result = scrape_akiya_table(target_url)
 
-    # 4. output: Print as formatted JSON
+    # Output: Print as formatted JSON
     if result:
         json_output = json.dumps(result, ensure_ascii=False, indent=4)
         print("\n--- Extracted Data (JSON) ---")
